@@ -4,6 +4,8 @@ import random
 random_number1 = random.randint(1, 43)
 random_number2 = random.randint(1, 43)
 
+print("开始抽取学号")
+
 # 写入文档
 file_path = 'random_numbers.txt'
 with open(file_path, 'w') as file:
