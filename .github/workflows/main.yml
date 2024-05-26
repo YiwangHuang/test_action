@@ -22,7 +22,7 @@ jobs:
       run: |
         git config --global user.email "you@example.com"
         git config --global user.name "Your Name"
-        git add myfile.txt
+        git add random_numbers.txt
         git commit -m "Update myfile.txt" || exit 0
         git push
       
