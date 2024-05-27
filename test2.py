@@ -1,1 +1,1 @@
-import numpy as no
+import numpy as np
