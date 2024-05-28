@@ -26,7 +26,7 @@
         // Function to fetch and display the content of the txt file
         async function fetchAndDisplayFile() {
             try {
-                const response = await fetch('./example.txt');
+                const response = await fetch('./random_numbers.txt');
                 if (!response.ok) {
                     throw new Error('Network response was not ok');
                 }
