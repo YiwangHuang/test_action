@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>引用数据文件示例</title>
+</head>
+<body>
+    <h1>数据文件示例</h1>
+    <p>从数据文件中读取的数值：</p>
+    <p id="dataValue"></p>
+
+    <script>
+        // 使用fetch函数异步获取数据文件内容
+        fetch('/data.csv')
+            // 将响应转换为文本格式
+            .then(response => response.text())
+            // 处理返回的数据
+            .then(data => {
+                // 将CSV文件内容按换行符分割成数组
+                const dataArray = data.split('\n');
+                // 提取第一个数值
+                const firstValue = dataArray[0];
+                // 在网页中显示数值
+                document.getElementById('dataValue').textContent = firstValue;
+            })
+            // 捕获可能的错误
+            .catch(error => {
+                console.error('读取数据文件时出错：', error);
+            });
+    </script>
+</body>
+</html>
