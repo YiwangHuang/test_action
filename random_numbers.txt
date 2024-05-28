@@ -1,0 +1,2 @@
+Random Number 1: 16
+Random Number 2: 20
