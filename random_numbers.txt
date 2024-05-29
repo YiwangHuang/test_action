@@ -1,2 +1,2 @@
-Random Number 1: 16
-Random Number 2: 20
+Random Number 1: 23
+Random Number 2: 16
